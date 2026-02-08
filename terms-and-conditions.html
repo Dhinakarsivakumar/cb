@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Classic Bags</title>
+    <meta name="description" content="Terms and Conditions for Classic Bags - Custom handmade paper bags. Read our policies on orders, customization, delivery, refunds, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Color Palette */
+        :root {
+            --primary-brown: #8B4513;
+            --secondary-brown: #A0522D;
+            --light-brown: #DEB887;
+            --beige: #F5E6D3;
+            --cream: #FFF8F0;
+            --dark-gray: #333;
+            --medium-gray: #666;
+            --light-gray: #f4f4f4;
+            --white: #ffffff;
+            --accent-gold: #DAA520;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--primary-brown);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-brown);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--beige);
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 0;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-brown);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--medium-gray);
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--medium-gray);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--primary-brown);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-brown);
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo h2 {
+            color: var(--primary-brown);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .nav-link {
+            color: var(--primary-brown);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            background-color: var(--beige);
+            text-decoration: none;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Main Content */
+        .content-wrapper {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            min-height: calc(100vh - 200px);
+        }
+
+        .terms-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid var(--light-brown);
+        }
+
+        .terms-header .last-updated {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .terms-content {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info-box {
+            background-color: var(--cream);
+            border-left: 4px solid var(--primary-brown);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .contact-info-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-info-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 2rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer h3 {
+            color: var(--light-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer p {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 0.85rem;
+            color: var(--light-gray);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .content-wrapper {
+                padding-top: 100px;
+            }
+
+            .terms-content {
+                padding: 1.5rem;
+            }
+
+            .nav-logo h2 {
+                font-size: 1.4rem;
+            }
+
+            ul, ol {
+                margin-left: 1.5rem;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .terms-content {
+                padding: 1rem;
+            }
+
+            .contact-info-box {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Classic Bags</h2>
+            </div>
+            <a href="index.html" class="nav-link">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="terms-header">
+                <h1>Terms &amp; Conditions</h1>
+                <p class="last-updated">Last Updated: February 8, 2024</p>
+            </div>
+
+            <div class="terms-content">
+                <!-- Section 1: Introduction -->
+                <section class="section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Classic Bags. These Terms and Conditions ("Terms") govern your use of our website and the purchase of our handmade custom paper bags. By accessing our website or placing an order with us, you agree to be bound by these Terms.</p>
+                    <p>Classic Bags is a family-owned business specializing in handmade, custom paper bags crafted from eco-friendly materials. We are committed to providing high-quality products and excellent customer service.</p>
+                    <p>Please read these Terms carefully before using our services. If you do not agree with any part of these Terms, please do not use our website or services.</p>
+                </section>
+
+                <!-- Section 2: Products & Services -->
+                <section class="section">
+                    <h2>2. Products &amp; Services</h2>
+                    <p>Classic Bags offers a range of handmade and custom paper bag products, including but not limited to:</p>
+                    <ul>
+                        <li>Custom gift bags with personalized designs</li>
+                        <li>Party and event bags for special occasions</li>
+                        <li>Cake and patisserie bags for bakery items</li>
+                        <li>Shopping and market bags for everyday use</li>
+                        <li>Custom-designed bags tailored to your specific requirements</li>
+                    </ul>
+                    <p>All our products are handmade using sustainable, eco-friendly kraft paper and materials. Each bag is crafted with care and attention to detail by our skilled artisans.</p>
+                    <p>Product images on our website are for illustrative purposes only. Actual products may vary slightly in color, size, and appearance due to the handmade nature of our work and differences in screen displays.</p>
+                </section>
+
+                <!-- Section 3: Orders & Customization -->
+                <section class="section">
+                    <h2>3. Orders &amp; Customization</h2>
+                    
+                    <h3>3.1 Placing an Order</h3>
+                    <p>Orders can be placed by contacting us through our website, WhatsApp (+91 9843275685), phone, or email (info@classicbags.com). We will discuss your requirements and provide a quotation based on your needs.</p>
+                    
+                    <h3>3.2 Custom Design Process</h3>
+                    <p>For custom orders, we require the following information:</p>
+                    <ul>
+                        <li>Type and size of bag required</li>
+                        <li>Quantity needed</li>
+                        <li>Design specifications (colors, logos, text, patterns)</li>
+                        <li>Delivery timeline</li>
+                        <li>Any special requirements or features</li>
+                    </ul>
+                    <p>We will provide design proofs for your approval before production begins. Changes to the design can be made during this review stage at no additional cost.</p>
+                    
+                    <h3>3.3 Order Confirmation</h3>
+                    <p>Once you approve the design and pricing, we will send you an order confirmation. Your order becomes binding upon receipt of the confirmation and any required deposit payment.</p>
+                    
+                    <h3>3.4 Minimum Order Quantities</h3>
+                    <p>Minimum order quantities may apply for certain products, especially for custom-designed bags. Please contact us to discuss your specific needs.</p>
+                </section>
+
+                <!-- Section 4: Pricing & Payments -->
+                <section class="section">
+                    <h2>4. Pricing &amp; Payments</h2>
+                    
+                    <h3>4.1 Pricing</h3>
+                    <p>All prices are quoted in Indian Rupees (INR) unless otherwise specified. Prices are subject to change without notice, but any price changes will not affect orders that have already been confirmed.</p>
+                    <p>Pricing depends on various factors including:</p>
+                    <ul>
+                        <li>Bag size and type</li>
+                        <li>Quantity ordered</li>
+                        <li>Complexity of customization</li>
+                        <li>Materials used</li>
+                        <li>Production timeline</li>
+                    </ul>
+                    
+                    <h3>4.2 Payment Terms</h3>
+                    <p>Payment terms will be agreed upon at the time of order placement. Generally, we require:</p>
+                    <ul>
+                        <li>A 50% deposit for custom orders before production begins</li>
+                        <li>Balance payment before or upon delivery</li>
+                    </ul>
+                    
+                    <h3>4.3 Payment Methods</h3>
+                    <p>We accept the following payment methods:</p>
+                    <ul>
+                        <li>Bank transfer</li>
+                        <li>UPI payments</li>
+                        <li>Cash on delivery (for local orders)</li>
+                        <li>Other methods as mutually agreed</li>
+                    </ul>
+                    
+                    <h3>4.4 Taxes</h3>
+                    <p>All applicable taxes, including GST, will be added to your order total as required by law.</p>
+                </section>
+
+                <!-- Section 5: Delivery & Timelines -->
+                <section class="section">
+                    <h2>5. Delivery &amp; Timelines</h2>
+                    
+                    <h3>5.1 Production Time</h3>
+                    <p>Production time varies based on order complexity and quantity. Standard production times are:</p>
+                    <ul>
+                        <li>Standard bags: 3-5 business days</li>
+                        <li>Custom designs: 7-14 business days</li>
+                        <li>Large or complex orders: As mutually agreed</li>
+                    </ul>
+                    <p>Rush orders may be accommodated for an additional fee, subject to our production capacity.</p>
+                    
+                    <h3>5.2 Delivery Options</h3>
+                    <p>We offer the following delivery options:</p>
+                    <ul>
+                        <li>Local pickup from our location</li>
+                        <li>Delivery within our service area</li>
+                        <li>Courier/shipping to other locations (charges applicable)</li>
+                    </ul>
+                    
+                    <h3>5.3 Delivery Charges</h3>
+                    <p>Delivery charges, if applicable, will be calculated based on the delivery location and order size. These charges will be communicated to you before order confirmation.</p>
+                    
+                    <h3>5.4 Delays</h3>
+                    <p>While we strive to meet all delivery timelines, delays may occasionally occur due to unforeseen circumstances such as material shortages, production issues, or external factors beyond our control. We will inform you promptly of any expected delays.</p>
+                    
+                    <h3>5.5 Inspection Upon Delivery</h3>
+                    <p>Please inspect your order upon delivery. If there are any issues with the products, please notify us within 24 hours of receipt.</p>
+                </section>
+
+                <!-- Section 6: Cancellations & Refunds -->
+                <section class="section">
+                    <h2>6. Cancellations &amp; Refunds</h2>
+                    
+                    <h3>6.1 Order Cancellations</h3>
+                    <p>Order cancellations are subject to the following terms:</p>
+                    <ul>
+                        <li><strong>Before production begins:</strong> Full refund of any deposits paid, minus any design costs incurred</li>
+                        <li><strong>After production begins:</strong> Cancellations are not generally accepted. In exceptional circumstances, refunds may be considered on a case-by-case basis, minus costs already incurred</li>
+                        <li><strong>Custom orders:</strong> Once production has begun on custom-designed bags, orders cannot be cancelled as these products are made specifically for you</li>
+                    </ul>
+                    
+                    <h3>6.2 Refunds for Defective Products</h3>
+                    <p>If your order arrives damaged or defective due to manufacturing errors, we will:</p>
+                    <ul>
+                        <li>Replace the defective items at no charge, or</li>
+                        <li>Provide a full refund for the defective items</li>
+                    </ul>
+                    <p>Claims for defective products must be made within 48 hours of delivery with photographic evidence.</p>
+                    
+                    <h3>6.3 Refund Processing</h3>
+                    <p>Approved refunds will be processed within 7-10 business days using the original payment method.</p>
+                    
+                    <h3>6.4 Non-Refundable Items</h3>
+                    <p>Custom-designed products that meet the agreed specifications are non-refundable, as they are made to order specifically for you.</p>
+                </section>
+
+                <!-- Section 7: Intellectual Property -->
+                <section class="section">
+                    <h2>7. Intellectual Property</h2>
+                    
+                    <h3>7.1 Our Intellectual Property</h3>
+                    <p>All content on our website, including text, graphics, logos, images, and designs, is the property of Classic Bags and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or use any content from our website without our express written permission.</p>
+                    
+                    <h3>7.2 Your Intellectual Property</h3>
+                    <p>When you provide us with designs, logos, or other materials for custom orders, you warrant that you own or have the right to use such materials. You grant us a license to use these materials solely for the purpose of fulfilling your order.</p>
+                    
+                    <h3>7.3 Copyright and Trademark Compliance</h3>
+                    <p>We will not reproduce any copyrighted or trademarked materials on your custom bags unless you provide proof of ownership or authorization to use such materials. You agree to indemnify us against any claims arising from unauthorized use of intellectual property provided by you.</p>
+                    
+                    <h3>7.4 Design Ownership</h3>
+                    <p>Original designs created by our team for your custom order remain our intellectual property, although you have the right to use them for the specific products ordered. If you wish to own the design rights exclusively, this must be negotiated separately.</p>
+                </section>
+
+                <!-- Section 8: Limitation of Liability -->
+                <section class="section">
+                    <h2>8. Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by law, Classic Bags shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of our products or services.</p>
+                    <p>Our total liability for any claim arising out of or related to our products or services shall not exceed the amount paid by you for the specific product or service in question.</p>
+                    <p>We make every effort to ensure our products are of the highest quality. However, due to the handmade nature of our products, minor variations in size, color, and appearance are normal and do not constitute grounds for refund or replacement.</p>
+                    <p>We are not responsible for:</p>
+                    <ul>
+                        <li>Errors in information provided by you for custom orders</li>
+                        <li>Delays caused by circumstances beyond our control</li>
+                        <li>Damage to products after delivery, unless caused by our negligence</li>
+                        <li>Use of our products for purposes other than their intended use</li>
+                    </ul>
+                </section>
+
+                <!-- Section 9: Changes to Terms -->
+                <section class="section">
+                    <h2>9. Changes to Terms</h2>
+                    <p>We reserve the right to modify these Terms and Conditions at any time. Changes will be effective immediately upon posting to our website. The "Last Updated" date at the top of this page indicates when these Terms were last revised.</p>
+                    <p>Your continued use of our website and services after any changes to these Terms constitutes your acceptance of the new Terms. We encourage you to review these Terms periodically to stay informed of any updates.</p>
+                    <p>For significant changes that may affect your rights, we will make reasonable efforts to notify you, such as by posting a notice on our website or sending an email to the address you provided.</p>
+                </section>
+
+                <!-- Section 10: Contact Information -->
+                <section class="section">
+                    <h2>10. Contact Information</h2>
+                    <p>If you have any questions about these Terms and Conditions, or if you need to contact us regarding your order or our services, please reach out to us using any of the following methods:</p>
+                    
+                    <div class="contact-info-box">
+                        <h3>Classic Bags</h3>
+                        <p><strong>Phone:</strong> <a href="tel:+919843275685">+91 9843275685</a></p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/919843275685" target="_blank">+91 9843275685</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@classicbags.com">info@classicbags.com</a></p>
+                        <p><strong>Website:</strong> <a href="index.html">www.classicbags.com</a></p>
+                    </div>
+                    
+                    <p>We typically respond to inquiries within 24 hours during business days. For urgent matters, we recommend contacting us via WhatsApp or phone.</p>
+                    <p>Thank you for choosing Classic Bags. We look forward to serving you and creating beautiful, eco-friendly paper bags for your needs.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Classic Bags</h3>
+                <p>Custom handmade excellence, eco-friendly luxury</p>
+                <p>Phone: +91 9843275685 | Email: info@classicbags.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Classic Bags. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
