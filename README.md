@@ -6,6 +6,8 @@ A clean, modern portfolio website for showcasing premium bags and accessories br
 
 **https://dhinakarsivakumar.github.io/cb/**
 
+> 🚀 **Automated Deployment**: This site automatically deploys to GitHub Pages via GitHub Actions whenever changes are pushed to the main branch.
+
 ## Features
 
 - **Responsive Design**: Mobile-friendly layout that works on all devices
@@ -14,6 +16,7 @@ A clean, modern portfolio website for showcasing premium bags and accessories br
 - **Contact Integration**: WhatsApp, phone, and email contact options
 - **Smooth Animations**: Professional transitions and scroll effects
 - **No Backend Required**: Pure HTML, CSS, and JavaScript
+- **Automated Deployment**: GitHub Actions workflow for continuous deployment
 
 ## File Structure
 
@@ -106,20 +109,25 @@ Edit the brand name, tagline, and descriptions in `index.html` sections.
 
 ## Hosting
 
-This website can be hosted on:
+This website is currently hosted on:
 
-- **GitHub Pages**: Free static hosting
-- **Netlify**: Free static hosting with continuous deployment
-- **Vercel**: Free static hosting
-- **Any web server**: Simple file upload
+- **GitHub Pages**: Free static hosting with automated deployment via GitHub Actions
 
-### GitHub Pages Setup
+### Current Deployment
 
-1. Create a new repository on GitHub
-2. Upload all files to the repository
-3. Go to Settings > Pages
-4. Select main branch as source
-5. Your site will be available at `https://username.github.io/repository-name`
+This repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically deploys the site to GitHub Pages whenever changes are pushed to the main branch.
+
+**To publish or update the site:**
+1. Merge changes to the `main` branch
+2. GitHub Actions automatically builds and deploys
+3. Site updates appear at `https://dhinakarsivakumar.github.io/cb/` within 1-2 minutes
+
+**First-time setup:**
+1. Go to repository Settings > Pages
+2. Under "Build and deployment", select "GitHub Actions" as the source
+3. The workflow will automatically deploy on the next push to main
+
+See [PUBLISHING.md](PUBLISHING.md) for detailed deployment instructions.
 
 ## Fonts Used
 
